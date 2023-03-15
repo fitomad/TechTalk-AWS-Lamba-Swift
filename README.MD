@@ -29,6 +29,10 @@ AWS_SQS_QUEUE_URL = [URL de la cola de mensajes SQS]
 AWS_API_GATEWAY_URL = [URL base de AWS API Gateway]
 ```
 
+Tras añadir el archivo debe establecer que los entornos de **Debug** y **Release** lo usen
+
+![Xcode-xcconfig](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/XCConfig-Xcode.png)
+
 ### The Movie Database
 
 Necesitas tener un usuario en [themoviedb.org](https://www.themoviedb.org/).

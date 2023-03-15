@@ -8,21 +8,8 @@
 import Foundation
 import Resty
 
-final class AmazonFavoriteTrainingDELETERepository: FavoriteTrainingDELETERepository {
-    private let resty = Resty()
-    
+final class AmazonFavoriteTrainingDELETERepository: AmazonFavoriteTrainingBaseRepository, FavoriteTrainingDELETERepository {
     func delete(mediaID: Int, forUser userID: String) async throws {
-        let amazonFavorite = AmazonFavorite(media: mediaID, user: userID)
-        
-        let favoriteRequest = NetworkRequest(
-            httpHeaders: [ "Content-Type" : "application/json" ],
-            body: amazonFavorite.encoded(),
-            httpMethod: .delete)
-        
-        let favoriteResponse = try await resty.fetch(endpoint: AmazonFavoriteEndpoint.favorite, withParameters: favoriteRequest)
-        
-        if favoriteResponse.httpCodeResponse != 200 {
-            throw GlobantPlusError.dataSourceFailure
-        }
+        try await super.process(mediaID: mediaID, forUser: userID, httpMethod: .delete)
     }
 }

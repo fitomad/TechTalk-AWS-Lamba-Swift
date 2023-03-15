@@ -15,7 +15,6 @@
 		917E655329C127B100C1490B /* FavoriteTrainingPOSTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917E655229C127B100C1490B /* FavoriteTrainingPOSTRepository.swift */; };
 		91B0899E29C10E6C00E680E4 /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0899C29C10E6C00E680E4 /* ApplicationEnvironment.swift */; };
 		91B0899F29C10E6C00E680E4 /* GlobantPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0899D29C10E6C00E680E4 /* GlobantPlusApp.swift */; };
-		91B089A129C10EA000E680E4 /* AppConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 91B089A029C10EA000E680E4 /* AppConfig.xcconfig */; };
 		91B089B629C10EF300E680E4 /* DefaultShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089A629C10EF300E680E4 /* DefaultShowViewModel.swift */; };
 		91B089B729C10EF300E680E4 /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089A729C10EF300E680E4 /* ShowViewModel.swift */; };
 		91B089B829C10EF300E680E4 /* ShowView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089A929C10EF300E680E4 /* ShowView+Model.swift */; };
@@ -62,6 +61,8 @@
 		91BCE63629C117E3006779B3 /* MovieDB in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 91BCE63429C117E3006779B3 /* MovieDB */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		91BCE63929C11BCB006779B3 /* GlobantPlusUI in Frameworks */ = {isa = PBXBuildFile; productRef = 91BCE63829C11BCB006779B3 /* GlobantPlusUI */; };
 		91BCE63A29C11BCB006779B3 /* GlobantPlusUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 91BCE63829C11BCB006779B3 /* GlobantPlusUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D8B278DE29C22445008EFD74 /* AppConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */; };
+		D8B278E029C22A3F008EFD74 /* AmazonFavoriteTrainingBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B278DF29C22A3F008EFD74 /* AmazonFavoriteTrainingBaseRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,7 +92,6 @@
 		917E655229C127B100C1490B /* FavoriteTrainingPOSTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTrainingPOSTRepository.swift; sourceTree = "<group>"; };
 		91B0899C29C10E6C00E680E4 /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
 		91B0899D29C10E6C00E680E4 /* GlobantPlusApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobantPlusApp.swift; sourceTree = "<group>"; };
-		91B089A029C10EA000E680E4 /* AppConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppConfig.xcconfig; sourceTree = "<group>"; };
 		91B089A629C10EF300E680E4 /* DefaultShowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultShowViewModel.swift; sourceTree = "<group>"; };
 		91B089A729C10EF300E680E4 /* ShowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
 		91B089A929C10EF300E680E4 /* ShowView+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShowView+Model.swift"; sourceTree = "<group>"; };
@@ -134,6 +134,8 @@
 		91BC777529C1B4A2003AC200 /* Resty */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Resty; sourceTree = "<group>"; };
 		91BC777629C1DA8B003AC200 /* AmazonFavoriteTrainingPOSTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonFavoriteTrainingPOSTRepository.swift; sourceTree = "<group>"; };
 		91BC777829C1DB14003AC200 /* FavoriteTrainingDELETERepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTrainingDELETERepository.swift; sourceTree = "<group>"; };
+		D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = AppConfig.xcconfig; sourceTree = "<group>"; };
+		D8B278DF29C22A3F008EFD74 /* AmazonFavoriteTrainingBaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonFavoriteTrainingBaseRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,9 +228,9 @@
 		913347AB299FC5F300F2ECF4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D8B278DC29C22445008EFD74 /* Configuration */,
 				91B0899C29C10E6C00E680E4 /* ApplicationEnvironment.swift */,
 				91B0899D29C10E6C00E680E4 /* GlobantPlusApp.swift */,
-				913347AD299FC6DA00F2ECF4 /* Configuration */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -239,14 +241,6 @@
 				9133479E299FC5CB00F2ECF4 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		913347AD299FC6DA00F2ECF4 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				91B089A029C10EA000E680E4 /* AppConfig.xcconfig */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		913347B5299FC80E00F2ECF4 /* Scenes */ = {
@@ -281,6 +275,7 @@
 				9140380129C1DEBE0096C5CD /* Model */,
 				91BC777629C1DA8B003AC200 /* AmazonFavoriteTrainingPOSTRepository.swift */,
 				9140380629C1E3EC0096C5CD /* AmazonFavoriteTrainingDELETERepository.swift */,
+				D8B278DF29C22A3F008EFD74 /* AmazonFavoriteTrainingBaseRepository.swift */,
 			);
 			path = AmazonAPI;
 			sourceTree = "<group>";
@@ -530,6 +525,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D8B278DC29C22445008EFD74 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -600,7 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				913347A2299FC5CB00F2ECF4 /* Preview Assets.xcassets in Resources */,
-				91B089A129C10EA000E680E4 /* AppConfig.xcconfig in Resources */,
+				D8B278DE29C22445008EFD74 /* AppConfig.xcconfig in Resources */,
 				9133479F299FC5CB00F2ECF4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +637,7 @@
 				91B08A0629C10F2200E680E4 /* SQSActivity.swift in Sources */,
 				91B08A0229C10F2200E680E4 /* TMDBShowRepository.swift in Sources */,
 				91B08A0829C10F2200E680E4 /* GlobantPlusCoreData.xcdatamodeld in Sources */,
+				D8B278E029C22A3F008EFD74 /* AmazonFavoriteTrainingBaseRepository.swift in Sources */,
 				91B089BE29C10EF300E680E4 /* DashboardView.swift in Sources */,
 				9140380729C1E3EC0096C5CD /* AmazonFavoriteTrainingDELETERepository.swift in Sources */,
 				91B089D629C10F1400E680E4 /* InsertFavoriteRepository.swift in Sources */,
@@ -665,7 +669,7 @@
 /* Begin XCBuildConfiguration section */
 		913347A3299FC5CB00F2ECF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B089A029C10EA000E680E4 /* AppConfig.xcconfig */;
+			baseConfigurationReference = D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -727,7 +731,7 @@
 		};
 		913347A6299FC5CB00F2ECF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B089A029C10EA000E680E4 /* AppConfig.xcconfig */;
+			baseConfigurationReference = D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -757,7 +761,7 @@
 		};
 		91B08A0E29C1129400E680E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B089A029C10EA000E680E4 /* AppConfig.xcconfig */;
+			baseConfigurationReference = D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -819,7 +823,7 @@
 		};
 		91B08A0F29C1129400E680E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91B089A029C10EA000E680E4 /* AppConfig.xcconfig */;
+			baseConfigurationReference = D8B278DD29C22445008EFD74 /* AppConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

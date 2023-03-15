@@ -22,4 +22,10 @@ Debido a que las funciones AWS Lambda se ejecutan sobre un sistema [Amazon Linux
 
 ![Docker con Amazon Linux 2](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/Docker.png)
 
-Gracias al plugin `archive` presente desde la versión 1 de Swift AWS Lamnda runtime la gestión de dicha imagen se hace de forma transparente para nosotros, sólo es necesario tener instalado el cliente de Docker y ejecutándose mientras se realiza la compilación y empaquetado.
+Gracias al plugin `archive` presente desde la versión 1 de **Swift AWS Lamnda runtime** la gestión de dicha imagen se hace de forma transparente para nosotros, sólo es necesario tener instalado el cliente de Docker y ejecutándose mientras se realiza la compilación y empaquetado.
+
+## Resultado de la operación
+
+Una vez que se ha generado el paquete ya podemos cargar nuestra función Lambda en AWS. Para ello debemos ir a la carpeta donde hemos indicado que se genere el paquete y seleccionar el archivo `zip`
+
+![Terminal-Empaquetado](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/Lambda-Paquete.png)

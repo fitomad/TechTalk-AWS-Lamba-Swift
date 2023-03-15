@@ -36,6 +36,8 @@ Necesitas tener un usuario en [themoviedb.org](https://www.themoviedb.org/).
 Para conseguir tus credenciales de API debes dirigirte a Usuario > Configuración > API y copiar
 los valores de las sección **Clave de la API (v3 auth)** y **Token de acceso de lectura a la API (v4 auth)**
 
+![TMDB](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/tmdb.png)
+
 # Access Keys de AWS
 
 Debes pulsar sobre tu avatar de usuario y luego Credenciales de seguridad. Una vez allí dirígite a la sección **Claves de acceso** y crea las claves.

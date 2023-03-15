@@ -7,5 +7,4 @@ Los componentes actuales son
 * Backdrop
 * Poster
 * ShowBackdrop
-* MoviePoster
 * Text (Diferentes estilos de texto)

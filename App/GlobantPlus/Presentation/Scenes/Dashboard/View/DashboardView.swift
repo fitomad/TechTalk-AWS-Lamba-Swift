@@ -11,7 +11,7 @@ import GlobantPlusUI
 struct DashboardView: View {
     @StateObject private var viewModel = DefaultDashboardViewModel()
     
-    @Environment(\.isFocused) var focused: Bool
+    //@Environment(\.isFocused) var focused: Bool
     
     var body: some View {
         GeometryReader { proxy in
@@ -24,10 +24,6 @@ struct DashboardView: View {
                 ScrollView([ .horizontal ], showsIndicators: false) {
                     LazyHStack(alignment: .center, spacing: 32) {
                         ForEach(viewModel.trendingShows) { trendingShow in
-                            /*NavigationLink(value: DashboardNavigationManager.Destination.show(id: trendingShow.id)) {
-                                ShowBackdrop(imagePath: trendingShow.backdropPath, title: trendingShow.title, tagline: "This is a tagline")
-                                    .frame(width: 425)
-                            }*/
                             NavigationLink(destination: ShowView(showID: trendingShow.id)) {
                                 ShowBackdrop(imagePath: trendingShow.backdropPath, title: trendingShow.title, tagline: "This is a tagline")
                                     .frame(width: 425)
@@ -70,11 +66,6 @@ struct DashboardView: View {
                                 ShowBackdrop(imagePath: popularDocumentary.backdropPath, title: popularDocumentary.title, tagline: "This is a tagline")
                                     .frame(width: 425)
                             }
-                            /*
-                            NavigationLink(value: DashboardNavigationManager.Destination.show(id: popularDocumentary.id)) {
-                                ShowBackdrop(imagePath: popularDocumentary.backdropPath, title: popularDocumentary.title, tagline: "This is a tagline")
-                                    .frame(width: 425)
-                            }*/
                             .buttonStyle(.plain)
                         }
                     }

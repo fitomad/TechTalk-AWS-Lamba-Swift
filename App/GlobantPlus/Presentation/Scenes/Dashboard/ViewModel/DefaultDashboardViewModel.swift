@@ -10,10 +10,9 @@ import Foundation
 final class DefaultDashboardViewModel: DashboardViewModel, ObservableObject {
     @Published private(set) var trendingShows = [DashboardView.Model]()
     @Published private(set) var trendingMovies = [DashboardView.Model]()
-    
     @Published private(set) var popularDocumentaries = [DashboardView.Model]()
     
-    private(set) var useCase: DashboardUseCase = DefaultDashboardUseCase()
+    private(set) var useCase = DashboardFacade()
     
     func fetchTrendingShows() async {
         do {

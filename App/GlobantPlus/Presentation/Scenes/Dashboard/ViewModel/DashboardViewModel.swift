@@ -8,8 +8,6 @@
 import Foundation
 
 protocol DashboardViewModelInput {
-    var useCase: DashboardUseCase { get }
-    
     func fetchTrendingShows() async
     func fetchTrendingMovies() async
     

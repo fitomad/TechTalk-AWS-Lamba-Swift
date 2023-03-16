@@ -16,8 +16,10 @@ struct FavoritesController: SimpleLambdaHandler {
               let favorite = try? jsonDecoder.decode(Favorite.self, from: requestData)
         else
         {
-            context.logger.error("🚨 body data is not in the expected format")
-            throw BackendError.unexpectedParameter
+            let message = "🚨 body data is not in the expected format"
+            
+            context.logger.error("\(message)")
+            return APIGatewayV2Response(statusCode: .badRequest, body: message)
         }
           
         var command: FavoriteCommand?
@@ -35,7 +37,7 @@ struct FavoritesController: SimpleLambdaHandler {
                 context.logger.info("DELETE \(favorite)")
             default:
                 context.logger.error("🚨 Unexpected HTTP method")
-                throw BackendError.httpMethodNotImplemented
+                return APIGatewayV2Response(statusCode: .methodNotAllowed)
         }
         
         try command?.execute()

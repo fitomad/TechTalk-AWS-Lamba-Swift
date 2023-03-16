@@ -17,7 +17,7 @@ public struct Poster: View {
                 case .empty:
                     Rectangle()
                         .aspectRatio(0.6665, contentMode: .fit)
-                        .background(Color(uiColor: UIColor.gray))
+                        .background(Color.black)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .overlay(alignment: .center) {
                             ProgressView()

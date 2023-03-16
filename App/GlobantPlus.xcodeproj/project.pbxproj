@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		910A7A0329C30A6100B7CC00 /* TMDBTrendingShowListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0229C30A6100B7CC00 /* TMDBTrendingShowListRepository.swift */; };
+		910A7A0529C30ABA00B7CC00 /* TMDBPopularDocumentaryListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0429C30ABA00B7CC00 /* TMDBPopularDocumentaryListRepository.swift */; };
+		910A7A0829C30B8000B7CC00 /* TrendingShowListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0729C30B8000B7CC00 /* TrendingShowListRepository.swift */; };
+		910A7A0A29C30BB300B7CC00 /* PopularDocumentaryListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0929C30BB300B7CC00 /* PopularDocumentaryListRepository.swift */; };
+		910A7A0C29C30D1F00B7CC00 /* TrendingMovieListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0B29C30D1F00B7CC00 /* TrendingMovieListUseCase.swift */; };
+		910A7A0E29C30D4A00B7CC00 /* DefaultTrendingMovieListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0D29C30D4A00B7CC00 /* DefaultTrendingMovieListUseCase.swift */; };
+		910A7A1029C30DDB00B7CC00 /* PopularDocumentaryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A0F29C30DDB00B7CC00 /* PopularDocumentaryListUseCase.swift */; };
+		910A7A1229C30E0B00B7CC00 /* DefaultPopularDocumentaryListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A1129C30E0B00B7CC00 /* DefaultPopularDocumentaryListUseCase.swift */; };
+		910A7A1429C30E7A00B7CC00 /* DashboardFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7A1329C30E7A00B7CC00 /* DashboardFacade.swift */; };
 		9133479F299FC5CB00F2ECF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9133479E299FC5CB00F2ECF4 /* Assets.xcassets */; };
 		913347A2299FC5CB00F2ECF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913347A1299FC5CB00F2ECF4 /* Preview Assets.xcassets */; };
 		9140380329C1DECD0096C5CD /* AmazonFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9140380229C1DECD0096C5CD /* AmazonFavorite.swift */; };
@@ -27,13 +36,13 @@
 		91B089D629C10F1400E680E4 /* InsertFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C229C10F1400E680E4 /* InsertFavoriteRepository.swift */; };
 		91B089D729C10F1400E680E4 /* DeleteFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C329C10F1400E680E4 /* DeleteFavoriteRepository.swift */; };
 		91B089D829C10F1400E680E4 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C429C10F1400E680E4 /* ShowRepository.swift */; };
-		91B089D929C10F1400E680E4 /* DashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C529C10F1400E680E4 /* DashboardRepository.swift */; };
+		91B089D929C10F1400E680E4 /* TrendingMovieListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C529C10F1400E680E4 /* TrendingMovieListRepository.swift */; };
 		91B089DA29C10F1400E680E4 /* DefaultFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C829C10F1400E680E4 /* DefaultFavoriteUseCase.swift */; };
 		91B089DB29C10F1400E680E4 /* FavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089C929C10F1400E680E4 /* FavoriteUseCase.swift */; };
 		91B089DC29C10F1400E680E4 /* DefaultShowUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CB29C10F1400E680E4 /* DefaultShowUseCase.swift */; };
 		91B089DD29C10F1400E680E4 /* ShowUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CC29C10F1400E680E4 /* ShowUseCase.swift */; };
-		91B089DE29C10F1400E680E4 /* DefaultDashboardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CE29C10F1400E680E4 /* DefaultDashboardUseCase.swift */; };
-		91B089DF29C10F1400E680E4 /* DashboardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CF29C10F1400E680E4 /* DashboardUseCase.swift */; };
+		91B089DE29C10F1400E680E4 /* DefaultTrendingShowListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CE29C10F1400E680E4 /* DefaultTrendingShowListUseCase.swift */; };
+		91B089DF29C10F1400E680E4 /* TrendingShowListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089CF29C10F1400E680E4 /* TrendingShowListUseCase.swift */; };
 		91B089E029C10F1400E680E4 /* TrendingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089D129C10F1400E680E4 /* TrendingItem.swift */; };
 		91B089E129C10F1400E680E4 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089D229C10F1400E680E4 /* Genre.swift */; };
 		91B089E229C10F1400E680E4 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089D329C10F1400E680E4 /* Show.swift */; };
@@ -43,7 +52,7 @@
 		91B08A0029C10F2200E680E4 /* CoreDataDeleteFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089E929C10F2200E680E4 /* CoreDataDeleteFavoriteRepository.swift */; };
 		91B08A0129C10F2200E680E4 /* CoreDataFetchFavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089EA29C10F2200E680E4 /* CoreDataFetchFavoriteRepository.swift */; };
 		91B08A0229C10F2200E680E4 /* TMDBShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089EC29C10F2200E680E4 /* TMDBShowRepository.swift */; };
-		91B08A0329C10F2200E680E4 /* TMDBDashboardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089EE29C10F2200E680E4 /* TMDBDashboardRepository.swift */; };
+		91B08A0329C10F2200E680E4 /* TMDBTrendingMovieListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089EE29C10F2200E680E4 /* TMDBTrendingMovieListRepository.swift */; };
 		91B08A0429C10F2200E680E4 /* SQSActivityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089F129C10F2200E680E4 /* SQSActivityQueue.swift */; };
 		91B08A0529C10F2200E680E4 /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089F229C10F2200E680E4 /* Trackable.swift */; };
 		91B08A0629C10F2200E680E4 /* SQSActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B089F429C10F2200E680E4 /* SQSActivity.swift */; };
@@ -82,6 +91,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		910A7A0229C30A6100B7CC00 /* TMDBTrendingShowListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBTrendingShowListRepository.swift; sourceTree = "<group>"; };
+		910A7A0429C30ABA00B7CC00 /* TMDBPopularDocumentaryListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBPopularDocumentaryListRepository.swift; sourceTree = "<group>"; };
+		910A7A0729C30B8000B7CC00 /* TrendingShowListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingShowListRepository.swift; sourceTree = "<group>"; };
+		910A7A0929C30BB300B7CC00 /* PopularDocumentaryListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDocumentaryListRepository.swift; sourceTree = "<group>"; };
+		910A7A0B29C30D1F00B7CC00 /* TrendingMovieListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovieListUseCase.swift; sourceTree = "<group>"; };
+		910A7A0D29C30D4A00B7CC00 /* DefaultTrendingMovieListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTrendingMovieListUseCase.swift; sourceTree = "<group>"; };
+		910A7A0F29C30DDB00B7CC00 /* PopularDocumentaryListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDocumentaryListUseCase.swift; sourceTree = "<group>"; };
+		910A7A1129C30E0B00B7CC00 /* DefaultPopularDocumentaryListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPopularDocumentaryListUseCase.swift; sourceTree = "<group>"; };
+		910A7A1329C30E7A00B7CC00 /* DashboardFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFacade.swift; sourceTree = "<group>"; };
 		91334797299FC5CA00F2ECF4 /* GlobantPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobantPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9133479E299FC5CB00F2ECF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		913347A1299FC5CB00F2ECF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -104,13 +122,13 @@
 		91B089C229C10F1400E680E4 /* InsertFavoriteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertFavoriteRepository.swift; sourceTree = "<group>"; };
 		91B089C329C10F1400E680E4 /* DeleteFavoriteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteFavoriteRepository.swift; sourceTree = "<group>"; };
 		91B089C429C10F1400E680E4 /* ShowRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
-		91B089C529C10F1400E680E4 /* DashboardRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardRepository.swift; sourceTree = "<group>"; };
+		91B089C529C10F1400E680E4 /* TrendingMovieListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingMovieListRepository.swift; sourceTree = "<group>"; };
 		91B089C829C10F1400E680E4 /* DefaultFavoriteUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultFavoriteUseCase.swift; sourceTree = "<group>"; };
 		91B089C929C10F1400E680E4 /* FavoriteUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteUseCase.swift; sourceTree = "<group>"; };
 		91B089CB29C10F1400E680E4 /* DefaultShowUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultShowUseCase.swift; sourceTree = "<group>"; };
 		91B089CC29C10F1400E680E4 /* ShowUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUseCase.swift; sourceTree = "<group>"; };
-		91B089CE29C10F1400E680E4 /* DefaultDashboardUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultDashboardUseCase.swift; sourceTree = "<group>"; };
-		91B089CF29C10F1400E680E4 /* DashboardUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardUseCase.swift; sourceTree = "<group>"; };
+		91B089CE29C10F1400E680E4 /* DefaultTrendingShowListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTrendingShowListUseCase.swift; sourceTree = "<group>"; };
+		91B089CF29C10F1400E680E4 /* TrendingShowListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingShowListUseCase.swift; sourceTree = "<group>"; };
 		91B089D129C10F1400E680E4 /* TrendingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingItem.swift; sourceTree = "<group>"; };
 		91B089D229C10F1400E680E4 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		91B089D329C10F1400E680E4 /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
@@ -120,7 +138,7 @@
 		91B089E929C10F2200E680E4 /* CoreDataDeleteFavoriteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDeleteFavoriteRepository.swift; sourceTree = "<group>"; };
 		91B089EA29C10F2200E680E4 /* CoreDataFetchFavoriteRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataFetchFavoriteRepository.swift; sourceTree = "<group>"; };
 		91B089EC29C10F2200E680E4 /* TMDBShowRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBShowRepository.swift; sourceTree = "<group>"; };
-		91B089EE29C10F2200E680E4 /* TMDBDashboardRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBDashboardRepository.swift; sourceTree = "<group>"; };
+		91B089EE29C10F2200E680E4 /* TMDBTrendingMovieListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBTrendingMovieListRepository.swift; sourceTree = "<group>"; };
 		91B089F129C10F2200E680E4 /* SQSActivityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQSActivityQueue.swift; sourceTree = "<group>"; };
 		91B089F229C10F2200E680E4 /* Trackable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
 		91B089F429C10F2200E680E4 /* SQSActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQSActivity.swift; sourceTree = "<group>"; };
@@ -153,6 +171,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910A7A0629C30B6000B7CC00 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				91B089C529C10F1400E680E4 /* TrendingMovieListRepository.swift */,
+				910A7A0729C30B8000B7CC00 /* TrendingShowListRepository.swift */,
+				910A7A0929C30BB300B7CC00 /* PopularDocumentaryListRepository.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		9133478E299FC5CA00F2ECF4 = {
 			isa = PBXGroup;
 			children = (
@@ -353,9 +381,9 @@
 		91B089BF29C10F1400E680E4 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				910A7A0629C30B6000B7CC00 /* Dashboard */,
 				91B089C029C10F1400E680E4 /* Favorires */,
 				91B089C429C10F1400E680E4 /* ShowRepository.swift */,
-				91B089C529C10F1400E680E4 /* DashboardRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -403,8 +431,13 @@
 		91B089CD29C10F1400E680E4 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				91B089CE29C10F1400E680E4 /* DefaultDashboardUseCase.swift */,
-				91B089CF29C10F1400E680E4 /* DashboardUseCase.swift */,
+				91B089CE29C10F1400E680E4 /* DefaultTrendingShowListUseCase.swift */,
+				91B089CF29C10F1400E680E4 /* TrendingShowListUseCase.swift */,
+				910A7A0B29C30D1F00B7CC00 /* TrendingMovieListUseCase.swift */,
+				910A7A0D29C30D4A00B7CC00 /* DefaultTrendingMovieListUseCase.swift */,
+				910A7A0F29C30DDB00B7CC00 /* PopularDocumentaryListUseCase.swift */,
+				910A7A1129C30E0B00B7CC00 /* DefaultPopularDocumentaryListUseCase.swift */,
+				910A7A1329C30E7A00B7CC00 /* DashboardFacade.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -459,7 +492,9 @@
 		91B089ED29C10F2200E680E4 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				91B089EE29C10F2200E680E4 /* TMDBDashboardRepository.swift */,
+				91B089EE29C10F2200E680E4 /* TMDBTrendingMovieListRepository.swift */,
+				910A7A0229C30A6100B7CC00 /* TMDBTrendingShowListRepository.swift */,
+				910A7A0429C30ABA00B7CC00 /* TMDBPopularDocumentaryListRepository.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -616,16 +651,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B089D729C10F1400E680E4 /* DeleteFavoriteRepository.swift in Sources */,
+				910A7A0A29C30BB300B7CC00 /* PopularDocumentaryListRepository.swift in Sources */,
 				91B08A0429C10F2200E680E4 /* SQSActivityQueue.swift in Sources */,
 				91B0899F29C10E6C00E680E4 /* GlobantPlusApp.swift in Sources */,
 				91B08A0529C10F2200E680E4 /* Trackable.swift in Sources */,
 				91B08A0729C10F2200E680E4 /* CoraDataStorage.swift in Sources */,
 				91B089B629C10EF300E680E4 /* DefaultShowViewModel.swift in Sources */,
 				91B089D529C10F1400E680E4 /* FetchFavoriteRepository.swift in Sources */,
-				91B089DF29C10F1400E680E4 /* DashboardUseCase.swift in Sources */,
+				91B089DF29C10F1400E680E4 /* TrendingShowListUseCase.swift in Sources */,
 				91B0899E29C10E6C00E680E4 /* ApplicationEnvironment.swift in Sources */,
 				91B08A0029C10F2200E680E4 /* CoreDataDeleteFavoriteRepository.swift in Sources */,
-				91B08A0329C10F2200E680E4 /* TMDBDashboardRepository.swift in Sources */,
+				910A7A1229C30E0B00B7CC00 /* DefaultPopularDocumentaryListUseCase.swift in Sources */,
+				91B08A0329C10F2200E680E4 /* TMDBTrendingMovieListRepository.swift in Sources */,
+				910A7A0829C30B8000B7CC00 /* TrendingShowListRepository.swift in Sources */,
+				910A7A0E29C30D4A00B7CC00 /* DefaultTrendingMovieListUseCase.swift in Sources */,
 				91B089FE29C10F2200E680E4 /* Int+Runtime.swift in Sources */,
 				91B089BD29C10EF300E680E4 /* DashboardView+Model.swift in Sources */,
 				91B08A0129C10F2200E680E4 /* CoreDataFetchFavoriteRepository.swift in Sources */,
@@ -643,17 +682,21 @@
 				91B089D629C10F1400E680E4 /* InsertFavoriteRepository.swift in Sources */,
 				91B089B829C10EF300E680E4 /* ShowView+Model.swift in Sources */,
 				91B089B929C10EF300E680E4 /* ShowView.swift in Sources */,
-				91B089D929C10F1400E680E4 /* DashboardRepository.swift in Sources */,
+				91B089D929C10F1400E680E4 /* TrendingMovieListRepository.swift in Sources */,
 				91B089E129C10F1400E680E4 /* Genre.swift in Sources */,
-				91B089DE29C10F1400E680E4 /* DefaultDashboardUseCase.swift in Sources */,
+				91B089DE29C10F1400E680E4 /* DefaultTrendingShowListUseCase.swift in Sources */,
 				917E655329C127B100C1490B /* FavoriteTrainingPOSTRepository.swift in Sources */,
 				91B089DA29C10F1400E680E4 /* DefaultFavoriteUseCase.swift in Sources */,
 				91B08A0B29C10F2200E680E4 /* PCDFavorite+CoreDataClass.swift in Sources */,
+				910A7A1029C30DDB00B7CC00 /* PopularDocumentaryListUseCase.swift in Sources */,
 				91B089E229C10F1400E680E4 /* Show.swift in Sources */,
 				91B089DC29C10F1400E680E4 /* DefaultShowUseCase.swift in Sources */,
 				91B08A0929C10F2200E680E4 /* StorageSettings.swift in Sources */,
 				91B089FF29C10F2200E680E4 /* CoreDataInsertFavoriteRepository.swift in Sources */,
+				910A7A0529C30ABA00B7CC00 /* TMDBPopularDocumentaryListRepository.swift in Sources */,
 				91B089D829C10F1400E680E4 /* ShowRepository.swift in Sources */,
+				910A7A0329C30A6100B7CC00 /* TMDBTrendingShowListRepository.swift in Sources */,
+				910A7A1429C30E7A00B7CC00 /* DashboardFacade.swift in Sources */,
 				9140380329C1DECD0096C5CD /* AmazonFavorite.swift in Sources */,
 				9140380529C1E2570096C5CD /* AmazonFavoriteEndpoint.swift in Sources */,
 				91B089E029C10F1400E680E4 /* TrendingItem.swift in Sources */,
@@ -661,6 +704,7 @@
 				91B089BA29C10EF300E680E4 /* DashboardViewModel.swift in Sources */,
 				91BC777929C1DB14003AC200 /* FavoriteTrainingDELETERepository.swift in Sources */,
 				91B089E329C10F1400E680E4 /* GlobantPlusError.swift in Sources */,
+				910A7A0C29C30D1F00B7CC00 /* TrendingMovieListUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

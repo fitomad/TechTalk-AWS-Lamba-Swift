@@ -1,66 +1,31 @@
-# Tech Talk: AWS Lambda con Swift
+# Compilación de Lambas con Swift
 
-Este es el repositorio con todo el código mostrado en la Tech Talk de [Globant](https://www.globant.com/) en que hablamos sobre el uso del lenguaje Swift para desarrollar Amazon Web Services Lambdas.
+Debemos abrir la aplicación **Terminal** y situarnos en la carpeta con el Swift Package que queremos compilar y generar su paquete y ejecutar el siguiente comando.
 
-## Organización
-
-Dentro de este repositorio encontrarás los siguientes proyectos
-
-* Carpeta **App**
-    * **GlobantPlus**. Es la aplicación desarrollada para tvOS que sirve de guía en la charla. Hace las llamadas a las Lambdas que almacenan los favoritos y el tracking del usuario mientras usa la aplicación
-* Carpeta **Lambdas**
-    * **AWSLambdaBasic** La Lambda más básica.
-    * **AWSLambdaBackend** Se encanrga de los eventos `POST` y `DELETE` recibidos por AWS API Gateway y los inserta en una base de datos DynamoDB
-    * **AWSLambdaTracking** Recibe un evento de una cola de mensaje AWS SQS.
-    * **AWSMultipleFunctions** Varias Lambdas dentro de un mismo Swift Package.
-
-## Preparar la app GlobantPlus
-
-Para poder compilar y ejecutar la aplicación GlobantPlus es necesario un archivo de configuración de proyecto (`.xcconfig`) que contendrá los datos de cuentas de usuario para The Movie Database y las claves de identidad creadas para nuestro usuario de Amazon Web Services
-
-```xcconfig
-TMDB_API_KEY = [API Key para Movie Database ]
-TMDB_API_AUTH_KEY = [Tu AUTH KEY de The Movie Database]
-
-AWS_ACCESS_KEY_ID = [Tu clave de acceso de AWS]
-AWS_SECRET_ACCESS_KEY = [Clave secreta de acceso a AWS]
-
-AWS_SQS_QUEUE_URL = [URL de la cola de mensajes SQS]
-AWS_API_GATEWAY_URL = [URL base de AWS API Gateway]
+```zsh
+swift package --disable-sandbox archive 
 ```
 
-Tras añadir el archivo debe establecer que los entornos de **Debug** y **Release** lo usen
+Si queremos que el empaquetedo se genere en una ruta determinada se debe usar el parámetro `--output-path`
 
-![Xcode-xcconfig](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/XCConfig-Xcode.png)
+```zsh
+swift package --disable-sandbox archive --output-path /Users/JohnAppleseed/Desktop --verbose 2
+```
 
-### The Movie Database
+El parámetro `verbose` establece el nivel de detalle del log que sale por pantalla con el resultado de la operación
 
-Necesitas tener un usuario en [themoviedb.org](https://www.themoviedb.org/).
+Para una información más detallada sobre los parámetros que acepta el nuevo comando `archive` visita la sección [Deploy to AWS Lambda](https://github.com/swift-server/swift-aws-lambda-runtime#deploying-to-aws-lambda) del proyecto [Swift AWS Lambda runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
 
-Para conseguir tus credenciales de API debes dirigirte a Usuario > Configuración > API y copiar
-los valores de las sección **Clave de la API (v3 auth)** y **Token de acceso de lectura a la API (v4 auth)**
+## Preparativos previos
 
-![TMDB](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/tmdb.png)
+Debido a que las funciones AWS Lambda se ejecutan sobre un sistema [Amazon Linux 2](https://aws.amazon.com/es/amazon-linux-2/?amazon-linux-whats-new.sort-by=item.additionalFields.postDateTime&amazon-linux-whats-new.sort-order=desc), el empaquetado de las funciones Lambda se hace compilando el código fuente en una imagen Docker de dicho sistema operativo.
 
-# Access Keys de AWS
+![Docker con Amazon Linux 2](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/Docker.png)
 
-Debes pulsar sobre tu avatar de usuario y luego Credenciales de seguridad. Una vez allí dirígite a la sección **Claves de acceso** y crea las claves.
+Gracias al plugin `archive` presente desde la versión 1 de **Swift AWS Lamnda runtime** la gestión de dicha imagen se hace de forma transparente para nosotros, sólo es necesario tener instalado el cliente de Docker y ejecutándose mientras se realiza la compilación y empaquetado.
 
-## Documentación
+## Resultado de la operación
 
-En la carpeta **Documentación** dentro de este repositorio encontraréis detalles sobre algunos aspectos comentados durante la charla.
+Una vez que se ha generado el paquete ya podemos cargar nuestra función Lambda en AWS. Para ello debemos ir a la carpeta donde hemos indicado que se genere el paquete y seleccionar el archivo `zip`
 
-## Enlaces de interés
-
-* [Swift AWS Lambda Runtime](https://github.com/swift-server/swift-aws-lambda-runtime)
-* [Amazon aws-sdk-swift](https://github.com/awslabs/aws-sdk-swift)
-* [Soto SDK](https://github.com/soto-project/soto)
-
-* AWS Lambda [Developer Guide](https://docs.aws.amazon.com/lambda/index.html)
-* AWS [Step Functions](https://aws.amazon.com/es/step-functions/resources/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc)
-
-
-## Contacto
-
-**GitHub**: [fitomad](https://github.com/fitomad)
-**LinkedIn**: [www.linkedin.com/in/adolfo-vera](www.linkedin.com/in/adolfo-vera)
+![Terminal-Empaquetado](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/Lambda-Paquete.png)

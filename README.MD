@@ -53,4 +53,5 @@ En la carpeta **Documentación** dentro de este repositorio encontraréis detall
 ## Contacto
 
 **GitHub**: [fitomad](https://github.com/fitomad)
-**LinkedIn**: [www.linkedin.com/in/adolfo-vera](www.linkedin.com/in/adolfo-vera)
+
+**LinkedIn**: [www.linkedin.com/in/adolfo-vera](https://www.linkedin.com/in/adolfo-vera)

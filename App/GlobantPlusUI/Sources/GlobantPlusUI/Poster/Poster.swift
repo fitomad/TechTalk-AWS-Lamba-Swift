@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 public struct Poster: View {
+    private let posterAspectRatio = 0.6665
     private var url: URL?
     
     public var body: some View {
@@ -16,7 +17,7 @@ public struct Poster: View {
             switch status {
                 case .empty:
                     Rectangle()
-                        .aspectRatio(0.6665, contentMode: .fit)
+                        .aspectRatio(posterAspectRatio, contentMode: .fit)
                         .background(Color.black)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .overlay(alignment: .center) {
@@ -26,13 +27,13 @@ public struct Poster: View {
                     image
                         .resizable()
                         .renderingMode(.original)
-                        .aspectRatio(0.6665, contentMode: .fill)
+                        .aspectRatio(posterAspectRatio, contentMode: .fill)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         
                 case .failure:
                     Image("PosterPlaceholder", bundle: Bundle.module)
                         .resizable()
-                        .aspectRatio(0.6665, contentMode: .fit)
+                        .aspectRatio(posterAspectRatio, contentMode: .fit)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }

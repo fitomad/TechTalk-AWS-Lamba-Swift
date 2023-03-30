@@ -2,7 +2,8 @@ import XCTest
 @testable import MovieDB
 
 final class GenresTests: XCTestCase {
-    private let client = MovieDB(apiKey: "ae18023495231d6c234fd8f8ba1e2eb0")
+    #warning("Copy your MovieDB API here 👇")
+    private let client = MovieDB(apiKey: "")
     
     func testMovieGenres() async {
         do {

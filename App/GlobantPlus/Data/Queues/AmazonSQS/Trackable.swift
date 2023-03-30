@@ -14,9 +14,9 @@ protocol Trackable {
 extension Trackable {
     func trackUser(_ userID: String, activity: String, relatedToMedia mediaID: Int) {
         let record = SQSActivity(createdAt: Date(),
-                                         activity: activity,
-                                         mediaId: mediaID,
-                                         userId: userID)
+                                 activity: activity,
+                                 mediaId: mediaID,
+                                 userId: userID)
         
         let sqs = SQSActivityQueue()
         

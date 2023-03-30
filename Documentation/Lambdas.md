@@ -29,3 +29,6 @@ Gracias al plugin `archive` presente desde la versión 1 de **Swift AWS Lamnda r
 Una vez que se ha generado el paquete ya podemos cargar nuestra función Lambda en AWS. Para ello debemos ir a la carpeta donde hemos indicado que se genere el paquete y seleccionar el archivo `zip`
 
 ![Terminal-Empaquetado](https://github.com/fitomad/TechTalk-AWS-Lamba-Swift/raw/main/Documentation/Images/Lambda-Paquete.png)
+
+* [GitHub](https://github.com/fitomad)
+* [LinkedIn](https://www.linkedin.com/in/adolfo-vera)

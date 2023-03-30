@@ -32,7 +32,7 @@ final class SQSActivityQueue {
             return
         }
         
-        var activityMessage = SQS.SendMessageRequest(messageBody: jsonActivity,
+        let activityMessage = SQS.SendMessageRequest(messageBody: jsonActivity,
                                                      queueUrl: ApplicationEnvironment.shared.awsSQSQueueURL)
         
         do {

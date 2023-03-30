@@ -9,7 +9,8 @@ import XCTest
 @testable import MovieDB
 
 final class ShowTests: XCTestCase {
-    private let client = MovieDB(apiKey: "ae18023495231d6c234fd8f8ba1e2eb0")
+    #warning("Copy your MovieDB API here 👇")
+    private let client = MovieDB(apiKey: "")
     
     private let shows = [
         1399,  // Juego de Tronos

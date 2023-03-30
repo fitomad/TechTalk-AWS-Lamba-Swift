@@ -38,34 +38,25 @@ public struct TopPoster: View {
                 .cornerRadius(8)
                 .shadow(radius: 8)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                //.overlay(alignment: position.alignment) {
-                //    badge
-                //}
         }
-        
     }
     
     private var badge: some View {
-        //GeometryReader { proxy in
-            ZStack(alignment: .center) {
-                RoundedRectangle(cornerRadius: 8)
-                    //.trim(from: 0.25, to: 0.5)
-                    .foregroundColor(.white)
-                    .opacity(1.0)
+        ZStack(alignment: .center) {
+            RoundedRectangle(cornerRadius: 8)
+                .foregroundColor(.white)
+                .opacity(1.0)
+            
+            HStack(alignment: .center, spacing: 2) {
+                Text("#")
+                    .font(.system(size: 40, weight: .semibold, design: .rounded))
+                    .foregroundColor(.black)
                 
-                HStack(alignment: .center, spacing: 2) {
-                    Text("#")
-                        .font(.system(size: 40, weight: .semibold, design: .rounded))
-                        .foregroundColor(.black)
-                    
-                    Text("1")
-                        .font(.system(size: 60, weight: .black, design: .rounded))
-                        .foregroundColor(.black)
-                }
+                Text("1")
+                    .font(.system(size: 60, weight: .black, design: .rounded))
+                    .foregroundColor(.black)
             }
-            //.frame(width: proxy.size.width / 4.0, height: proxy.size.height / 8.0)
-            //.shadow(radius: 8)
-        //}
+        }
     }
     
     public init(path: String?, order: Int, at position: TopPoster.BagdePosition) {
